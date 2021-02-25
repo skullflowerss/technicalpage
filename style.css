@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+#navbar{
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color:white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-right: 1px solid black;
+}
+
+
+header{
+    padding: 1em;
+    font-size: 30px;
+    position: relative;
+    left: -30px;
+}
+
+#head{
+    padding-left: 0.3em;
+    left:1px;
+}
+#navbar li{
+    padding: 1em 0 1em 1em;
+    margin: 0;
+    font-size: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+#main-doc{
+    margin-left: 18%;
+    padding: 1px 16px;
+    height:auto;
+}
+.main-section{
+    margin: 2em 0;
+    width: 90%;
+    line-height: 1.5em;
+}
+
+.text-section ul{
+    width: 90%;
+    margin-left: 1.5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.text-section li{
+    margin-top: 0.5em;
+}
+
+.tecnical-section{
+    width: 90%;
+    background-color: rgba(128, 128, 128, 0.158);
+    padding: 1em 0em 1em 2em;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+p{
+    margin-top: 1em;
+}
+
+@media (max-width: 600px){
+    #navbar{
+        display: inline;
+        position: relative;
+    }
+}

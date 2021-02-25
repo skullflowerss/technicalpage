@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Technical Documentation Page</title>
+        <link rel="stylesheet" href="./style.css" type="text/css">
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <nav id="navbar">
+            <header id="head">Processing Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#Processing">Processing</a></li>
+                <li><a class="nav-link" href="#Funciones">Funciones</a></li>
+                <li><a class="nav-link" href="#Clases">Clases</a></li>
+                <li><a class="nav-link" href="#Arreglos">Arreglos</a></li>
+                <li><a class="nav-link" href="#Modulo">Modulo</a></li>
+            </ul>     
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Processing">
+                <header>Processing</header>
+                <div class="content-section">
+                    <div class="text-section">
+                        <p>Processing is a simple programming environment that was created to make it easier to develop visually oriented applications with an emphasis
+                            on animation and providing users with instant feedback through interaction. The developers wanted a means to “sketch” ideas in code.
+                            As its capabilities have expanded over the past decade, Processing has come to be used for more advanced production-level work in addition
+                            to its sketching role. Originally built as a domain-specific extension to Java targeted towards artists and designers, Processing has evolved
+                            into a full-blown design and prototyping tool used for large-scale installation work, motion graphics, and complex data visualization.</p>
+                        <p>Processing consists of:</p>
+                        <ul>
+                            <li>The Processing Development Environment (PDE). This is the software that runs when you double-click the Processing icon. The PDE is an Integrated Development 
+                                Environment (IDE) with a minimalist set of features designed as a simple introduction to programming or for testing one-off ideas.</li>
+                            <li>A collection of functions (also referred to as commands or methods) that make up the “core” programming interface, or API, as well as several 
+                                libraries that support more advanced features such as sending data over a network, reading live images from a webcam, and saving complex imagery in PDF format.</li>
+                            <li>A language syntax, identical to Java but with a few modifications.</li>
+                        </ul>
+                    </div>
+                    <div class="tecnical-section">
+                        <code>
+                            void setup() {<br>
+                                size(400, 400);<br>
+                                stroke(255);<br>
+                              }<br>
+                         <br>
+                              void draw() {<br>
+                                background(192, 64, 0);<br>
+                                line(150, 25, mouseX, mouseY);<br>
+                              }<br>
+                        </code>
+                       
+                    </div>
+                </div>
+            </section>
+            <section class="main-section" id="Funciones">
+                <header>Funciones</header>
+                <div class="content-section">
+                    <div class="text-section">
+                        <p>Las funciones son llamadas también "procedimientos” o “métodos” o “subrutinas”. El término que usamos nosotros es el de funciones, 
+                            sin embargo en otros lenguajes pueden referirse como procedimientos, en Java específicamente el término correcto es “método”.</p>
+                        <p>Processing nos permite crear visuales interesantes con pocas líneas de código, pero conforme nos aproximamos a proyectos más complejos, 
+                            tales como aplicaciones en red o procesamiento de imagen, necesitaremos escribir ya bastantes líneas, cientos.</p>
+                        <p>Las funciones son el medio para tomar partes del programa y separarles en piezas modulares, facilitando la lectura del código y su revisión.</p>
+                        <p>Las funciones tienen más a cargo que sólo romper un programa en pedazos.
+                            Los argumentos (o “parámetros”) son valores que se “pasan” a una función.
+                            Un argumento es una declaración simple de variable dentro del paréntesis de la definición en la función, la cual es una variable local.</p>
+                        <p>Cosas para recordar</p>
+                            <ul>
+                                <li>Debemos pasar el mismo número de parámetros que el definido en la función.</li>
+                                <li>El parámetro debe ser del mismo tipo dato que el declarado.</li>
+                                <li>El valor puede ser literal(20,16 ,34, etc), una variable(x,y,etc) o el resultado de una expresión(random(10), 8+3, etc).</li>
+                                <li>Los argumentos son variables locales para una función y sólo son accesibles dentro de la función misma.</li>
+                            </ul>
+                    </div>
+                    <div class="tecnical-section">
+                        <code>
+                                returnType  functionName (arguments) {<br>
+                                //código del cuerpo de la función<br>
+                                }<br>
+<br>
+                                //lamado de la funcion<br>
+                                functionName();<br>
+                        </code>
+                    </div>
+                </div>
+            </section>
+            <section class="main-section" id="Clases">
+                <header>Clases</header>
+                <div class="content-section">
+                    <div class="text-section">
+                        <p>Es importante comprender los fundamentos de la programación, desde siempre hemos estado usando lo que hasta ahora vemos, 
+                            lo nuevo es la manera de pensar y estructurar. Una nueva manera de organizar lo aprendido.</p>
+                        <p>Esto es lo que se conoce como OOP Programación orientada a objetos (Object Oriented Programming)</p>
+                        <p>Un objeto es una cosa que tiene propiedades y puede hacer cosas. Las propiedades en los objetos son lo que conocemos como variables y las cosas que puede hacer son las funciones.</p>
+                        <p>Una clase es un template del objeto donde viene especificada información relacionada con ella y las instrucciones que se realizaran.</p>
+                        <p>Una clase tiene:</p>
+                            <ul>
+                                <li>Nombre de la clase - Es especificado por class, el nombre de la clase ComoQuierasQueSeLlame y luego brackets(los nombres de las clases tradicionalmente comienzan en mayúscula).</li>
+                                <li>Informacion - La data es una colección de variables normalmente las llamamos instancias.</li>
+                                <li>Constructor - Es una función especial dentro de la clase que crea la instancia del objeto en sí. Es donde damos las instrucciones de cómo inicializar el objeto. Siempre tiene el mismo nombre de la clase y va seguido de dos paracentesis.</li>
+                                <li>Metodos - Estas son las funciones que vimos anteriormente, es donde se ejecutan instrucciones especificas.</li>
+                            </ul>
+                    </div>
+                    <div class="tecnical-section">
+                        <code>
+                            class ComoQuierasQueSeLlame {<br>
+                                int xPos, Ypos;<br>
+                                ComoQuierasQueSeLlame(){<br>
+                                    Xpos = valor(1,2.98,random(),'s',"palabra");<br>
+                                    Ypos= valor(1,2.98,random(),'s',"palabra");<br>
+                                }<br>
+                                NombreDeLaFuncion(){<br>
+                                }<br>
+                            }<br>
+                        </code>
+                    </div>
+                </div>
+            </section>
+            <section class="main-section" id="Arreglos">
+                <header>Arreglos</header>
+                <div class="content-section">
+                    <div class="text-section">
+                        <p>Nos permite contener en un sólo elemento una lista de variables. Un programa requiere múltiples instancias de datos similares, 
+                            en esos casos los arreglos nos vienen como anillo al dedo. El tener una lista de variables nos es útil de dos principales maneras:</p>
+                            <ul>
+                                <li>la lista guarda los elementos y permite localizarlos</li>
+                                <li>la lista guarda el orden de los mismos</li>
+                            </ul>
+                        <p>Los arreglos se declaran de la misma manera que las variables, sólo que se ven un tanto distintos por el uso de brackets vacíos</p>
+                        <p>Una propiedad fundamental de los arreglos es que son de un tamaño específico, y una vez que definimos el tamaño no puede ser modificado</p>
+                        <p>Creamos el arreglo en el momento que definimos el tamaño</p>
+                    </div>
+                    <div class="tecnical-section">
+                        <code>
+                            int [] arrayOfInts;<br>
+                            int[] arrayOfInts = new int [42];<br>
+                            nombreArreglo[índice] = valor guardado;<br>
+                            nombreArreglo[0] = 8;<br>
+                            nombreArreglo[1] = 3;<br>
+                            int[] arreglo = {1,5,8,40};<br>
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-section" id="Modulo">
+                <header>Modulo</header>
+                <div class="content-section">
+                    <div class="text-section">
+                        <p>Se escribe con el signo de porcentaje ´%´; es un concepto bastante sencillo y
+                            es sumamente útil para mantener un numero dentro de cierto límite (una forma en la pantalla, un índice de valor dentro de un arreglo).</p>
+                        <p>Módulo calcula el residuo de la división entre 2 números (funciona tanto en enteros como decimales)</p>
+                    </div>
+                    <div class="tecnical-section">
+                        <code>
+                            12 dividido entre 5 es 2 residuo 2, esto es 5 * 2 + 2 = 10 + 2 = 12.<br>
+                            12 módulo 5 es igual a 2 || 12 % 5 = 2<br>
+                            ///Cambiar el siguiente<br>
+                            x = x+1; <br>
+                            if(x >= limite){
+                                x = 0;<br>
+                            }<br>
+                            ///Por este<br>
+                            x = (x + 1)%limite<br>
+                        </code>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+    </body>
+</html>
